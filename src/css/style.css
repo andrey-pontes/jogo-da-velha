@@ -1,0 +1,78 @@
+:root{
+    background-image: linear-gradient(60deg, #1bdee1 10%, #FC01FE 80%);
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+h1{
+    letter-spacing: 3px;
+}
+
+.area{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.area:hover{
+    transform: scale(1.2);
+    border: 3px solid #726f6f;
+}
+
+.circle, .cross{
+    position: relative;
+}
+
+.circle::after{
+    content: "\1F7E2";
+}
+
+.cross::after{
+    content: "\274C";
+}
+
+.circle::after, .cross::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 50px;
+    border: 0;
+    padding: 17px 40px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+   
+button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+   
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
